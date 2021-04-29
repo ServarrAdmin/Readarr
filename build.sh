@@ -210,10 +210,13 @@ Package()
             ;;
     esac
 
-    Archive "$framework" "$runtime" "$name"
-    if [[ "$runtime" == osx-* ]];
+    if [[ ! -z $name ]];
     then
-        Archive "$framework" "${runtime}-app" "${name/osx/osx-app}"
+        Archive "$framework" "$runtime" "$name"
+        if [[ "$runtime" == osx-* ]];
+        then
+            Archive "$framework" "${runtime}-app" "${name/osx/osx-app}"
+        fi
     fi
 }
 
@@ -234,7 +237,10 @@ CreateTgz()
     local source="$1"
     local dest="$2"
 
-    tar -czf "${dest}.tar.gz" -C $source Readarr
+    if ! tar -czf "${dest}.tar.gz" -C $source Readarr;
+    then
+        echo "Error creating ${dest}.tar.gz"
+    fi
 }
 
 CreateZip()
@@ -408,13 +414,13 @@ then
         if [ "$ENABLE_BSD" = "YES" ];
         then
             Package "net5.0" "freebsd-x64" "freebsd-core-x64" &
-            pids[10]=$!
+            pids[9]=$!
         fi
 
         for pid in ${pids[*]}; do
             wait $pid
         done
     else
-        Package "$FRAMEWORK" "$RID" "$RID"
+        Package "$FRAMEWORK" "$RID"
     fi
 fi

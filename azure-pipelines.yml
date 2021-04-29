@@ -220,16 +220,14 @@ stages:
           artifactName: WindowsFrontend
           targetPath: _output
         displayName: Fetch Frontend
-      - bash: ./build.sh --packages
-        displayName: Create Packages
       - bash: |
+          ./build.sh --packages -f net5.0 -r win-x86
           setup/inno/ISCC.exe setup/readarr.iss //DFramework=net5.0 //DRuntime=win-x86
           cp setup/output/Readarr.*windows.net5.0.exe ${BUILD_ARTIFACTSTAGINGDIRECTORY}/Readarr.${BUILDNAME}.windows-core-x86-installer.exe
-        displayName: Create .NET Core Windows installer
-      - bash: |
+          ./build.sh --packages -f net5.0 -r win-x64
           setup/inno/ISCC.exe setup/readarr.iss //DFramework=net5.0 //DRuntime=win-x64
           cp setup/output/Readarr.*windows.net5.0.exe ${BUILD_ARTIFACTSTAGINGDIRECTORY}/Readarr.${BUILDNAME}.windows-core-x64-installer.exe
-        displayName: Create .NET Core Windows installer
+        displayName: Create .NET Core Windows installers
       - publish: $(Build.ArtifactStagingDirectory)
         artifact: 'WindowsInstaller'
         displayName: Publish Installer
