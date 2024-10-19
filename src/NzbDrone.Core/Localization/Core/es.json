@@ -762,7 +762,7 @@
     "ExtraFileExtensionsHelpText": "Lista de archivos adicionales separados por coma para importar (.nfo será importado como .nfo-orig)",
     "ExtraFileExtensionsHelpTextsExamples": "Ejemplos: '.sub, .nfo' o 'sub,nfo'",
     "ImportLists": "Importar listas",
-    "DownloadClientRemovesCompletedDownloadsHealthCheckMessage": "El cliente de descarga {downloadClientName} está configurado para eliminar las descargas completadas. Esto puede causar que las descargas sean eliminadas de tu cliente antes de que {1} pueda importarlas.",
+    "DownloadClientRemovesCompletedDownloadsHealthCheckMessage": "El cliente de descarga {0} está configurado para eliminar las descargas completadas. Esto puede causar que las descargas sean eliminadas de tu cliente antes de que {1} pueda importarlas.",
     "Continuing": "Continua",
     "DownloadClientQbittorrentSettingsContentLayout": "Diseño del contenido",
     "InvalidUILanguage": "Su interfaz de usuario está configurada en un idioma no válido, corríjalo y guarde la configuración",

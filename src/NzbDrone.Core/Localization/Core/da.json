@@ -654,5 +654,8 @@
     "AuthForm": "Formularer (login-side)",
     "DisabledForLocalAddresses": "Deaktiveret for lokale adresser",
     "Enabled": "Aktiveret",
-    "ApiKey": "API-nøgle"
+    "ApiKey": "API-nøgle",
+    "AddedAuthorSettings": "Indstillinger for tilføjede forfattere",
+    "AddMissing": "Tilføj manglende",
+    "AddImportListExclusionHelpText": "Forhindre bog i at blive tilføjet til Readarr via Importer Lister eller Opdater Forfatter"
 }

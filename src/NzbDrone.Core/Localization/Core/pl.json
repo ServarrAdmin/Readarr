@@ -697,5 +697,15 @@
     "AppUpdated": "{appName} Zaktualizowany",
     "AuthenticationMethod": "Metoda Autoryzacji",
     "AuthenticationMethodHelpTextWarning": "Wybierz prawidłową metodę autoryzacji",
-    "AuthenticationRequired": "Wymagana Autoryzacja"
+    "AuthenticationRequired": "Wymagana Autoryzacja",
+    "Library": "Biblioteka",
+    "Series": "Serial",
+    "Theme": "Motyw",
+    "ProfilesSettingsSummary": "Profile jakości, języka, opóźnienia i wydania",
+    "ReleaseProfiles": "profil wydania",
+    "MetadataProfile": "profil metadanych",
+    "Label": "Etykieta",
+    "CatalogNumber": "numer katalogowy",
+    "MetadataProfiles": "profil metadanych",
+    "Publisher": "Wydawca"
 }
