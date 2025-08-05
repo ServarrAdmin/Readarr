@@ -917,5 +917,10 @@
     "AddNewAuthorRootFolderHelpText": "La sottocartella '{0}' verrà creata automaticamente",
     "AddRootFolder": "Aggiungi Cartella Radice",
     "AddNewBook": "Aggiungi nuovo libro",
-    "AddNewAuthor": "Aggiungi nuovo autore"
+    "AddNewAuthor": "Aggiungi nuovo autore",
+    "BlocklistOnly": "Solo blocklist",
+    "WriteMetadataTags": "Scrivi tag metadati",
+    "AutomaticUpdatesDisabledDocker": "Gli aggiornamenti automatici non sono supportati direttamente quando si utilizza il meccanismo di aggiornamento Docker. Sarà necessario aggiornare l'immagine del contenitore al di fuori di {appName} o utilizzare uno script",
+    "BlocklistAndSearchHint": "Inizia una ricerca per sostituzioni dopo l'aggiunta alla lista dei blocchi",
+    "BlocklistMultipleOnlyHint": "Aggiungi alla blocklist senza ricerca di sostituti"
 }

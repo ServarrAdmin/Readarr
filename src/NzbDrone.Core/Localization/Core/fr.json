@@ -914,7 +914,7 @@
     "ReadarrSupportsMultipleListsForImportingBooksAndAuthorsIntoTheDatabase": "{appName} prend en charge plusieurs listes pour importer des albums et des artistes dans la base de données.",
     "TotalBookCountBooksTotalBookFileCountBooksWithFilesInterp": "{0} pistes au total. {1} pistes avec fichiers.",
     "SearchForAllMissingBooks": "Rechercher tous les albums manquants",
-    "ForeignIdHelpText": "L'identifiant Musicbrainz de l'artiste/album à exclure",
+    "ForeignIdHelpText": "L'identifiant Foreign de l'artiste/album à exclure",
     "EnableProfile": "Activer profil",
     "Development": "Développement",
     "FilesTotal": "Fichiers  ({0})",
@@ -1120,5 +1120,7 @@
     "LastSearched": "Dernière recherche",
     "Unknown": "Inconnu",
     "AddNewAuthorRootFolderHelpText": "Le sous-dossier « {folder} » sera créé automatiquement",
-    "AddRootFolder": "Ajouter un dossier racine"
+    "AddRootFolder": "Ajouter un dossier racine",
+    "AddNewAuthor": "Ajouter un nouvel auteur",
+    "AddNewBook": "Ajouter un nouveau livre"
 }
